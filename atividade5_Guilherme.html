@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 05</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      História Interativa: Crie uma história simples onde o usuário faz escolhas
+      usando confirm() que mudam o final da história.
+    </h3>
+  </body>
+  <script>
+    confirm(
+      "Você está em uma floresta escura e encontra uma bifurcação. Você quer seguir pela esquerda?"
+    )
+      ? confirm("Você encontrou um lago. Você quer nadar?")
+        ? alert("Você foi atacado por um jacaré!")
+        : alert("Você encontrou um tesouro!")
+      : confirm("Você encontrou um castelo. Você quer entrar?")
+      ? alert("Você foi capturado por um dragão!")
+      : alert("Você encontrou um tesouro!");
+  </script>
+</html>

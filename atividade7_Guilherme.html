@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 07</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+      p {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Texto Secreto: Oculte um texto e crie um botão para exibi-lo usando style.display.</h3>
+    <button onclick="funcao()">Exibir <b>O TEXTO</b></button>
+    <p id="otexto"><b>O TEXTO</b></p>
+  </body>
+  <script>
+    function funcao() {
+      document.getElementById("otexto").style.display = "block";
+    }
+  </script>
+</html>

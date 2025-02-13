@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 09</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+      p{
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Alterando o Humor: Crie um botão "Estou feliz" e outro "Estou triste" que
+      mudam o texto e a cor da página de acordo com o sentimento.
+    </h3>
+    <button id="feliz" onclick="funcao0()">Estou Feliz</button>
+    <button id="triste" onclick="funcao1()">Estou Triste</button>
+    <p id="plchld"></p>
+  </body>
+  <script>
+    function funcao0(){
+      document.body.style.backgroundColor = "yellow";
+      document.getElementById("plchld").innerHTML = ("Que bom que você esta feliz!")
+    }
+    function funcao1(){
+      document.body.style.backgroundColor = "blue";
+      document.getElementById("plchld").innerHTML = ("Que bom que você esta triste!")
+    }
+  </script>
+</html>

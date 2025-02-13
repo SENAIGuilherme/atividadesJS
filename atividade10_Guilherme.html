@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 10</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Transformação de Texto: Um botão que, ao clicar, transforma o texto de um
+      parágrafo em letras maiúsculas.
+    </h3>
+    <p id="otexto">
+      lorem ipsum, dolor sit amet consectetur adipisicing elit. facilis
+      doloremque ea aliquid praesentium, architecto et aliquam debitis aut
+      necessitatibus nihil optio quam natus magni, dolor tempore aperiam
+      excepturi ullam impedit.
+    </p>
+    <button onclick="funcao()">Transformar em Maiúsculas</button>
+  </body>
+  <script>
+    function funcao() {
+      const texto = document.getElementById("otexto").innerText;
+      document.getElementById("otexto").innerText = texto.toUpperCase();
+    }
+  </script>
+</html>

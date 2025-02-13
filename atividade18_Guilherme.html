@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 18</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: rgb(132, 0, 255);
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Fonte Maluca: Mude a fonte do texto para uma aleatória entre várias opções
+      ao clicar em um botão.
+    </h3>
+    <button id="botao" onclick="funcao()">cor</button>
+  </body>
+  <script>
+    function funcao() {
+      let fontes = ["Verdana", "Geneva", "Tahoma", "sans-serif"];
+      let fonte = fontes[Math.floor(Math.random() * fontes.length)];
+      document.body.style.fontFamily = fonte;
+    }
+  </script>
+</html>

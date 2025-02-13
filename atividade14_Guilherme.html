@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 14</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: rgb(132, 0, 255);
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="h3">
+      Explosão de Cores: Alterne entre várias cores de fundo ao clicar em um
+      botão repetidamente.
+    </h3>
+    <button id="botao" onclick="funcao()">Mudar Cor</button>
+  </body>
+  <script>
+    function funcao() {
+      let cores = ["#000000", "#ffffff", "#ff0000", "#00ff00", "#0000ff"];
+      let cor = cores[Math.floor(Math.random() * cores.length)];
+      document.body.style.backgroundColor = cor;
+    }
+    document.getElementById("botao").addEventListener("click", function () {
+      if (document.body.style.backgroundColor === "rgb(0, 255, 0)") {
+        document.getElementById("h3").style.color = "black";
+      } else {
+        document.getElementById("h3").style.color = "rgb(0, 255, 0)";
+      }
+    });
+  </script>
+</html>

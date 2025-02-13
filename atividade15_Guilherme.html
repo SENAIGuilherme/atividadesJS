@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 15</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Efeito Hover: Mude a cor de um texto quando o mouse passar por cima usando
+      mouseover e mouseout
+    </h3>
+    <p id="texto" onmouseover="funcao0()" onmouseout="funcao1()">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+      architecto a, quis modi hic necessitatibus iste quos optio quia maiores.
+      Provident architecto voluptatum error veniam, optio iste voluptatem
+      dolores illum!
+    </p>
+  </body>
+  <script>
+    function funcao0() {
+      document.getElementById("texto").style.color = "rgb(255, 0, 0)";
+    }
+    function funcao1() {
+      document.getElementById("texto").style.color = "rgb(0, 0, 255)";
+    }
+  </script>
+</html>

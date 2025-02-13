@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 11</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+      button {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Botão Fugitivo: Crie um botão que "foge" do mouse mudando de posição ao
+      tentar ser clicado.
+    </h3>
+    <button onclick="funcao()">TENTE ME PEGAR</button>
+  </body>
+  <script>
+    function funcao() {
+      const x = Math.random() * window.innerWidth;
+      const y = Math.floor(Math.random() * window.innerHeight);
+      document.querySelector("button").style.left = `${x}px`;
+      document.querySelector("button").style.top = `${y}px`;
+    }
+  </script>
+</html>

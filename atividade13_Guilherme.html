@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 13</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+      #quadrado {
+        background-color: rgb(0, 255, 0);
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Desafio do Clique: Um quadrado que fica menor a cada clique até
+      desaparecer.
+    </h3>
+    <div id="quadrado" onclick="funcao()"></div>
+  </body>
+  <script>
+    function funcao() {
+      let quadrado = document.getElementById("quadrado");
+      let quadradow = quadrado.offsetWidth;
+      let quadradoh = quadrado.offsetHeight;
+      quadrado.style.width = quadradow - 50 + "px";
+      quadrado.style.height = quadradoh - 50 + "px";
+    }
+  </script>
+</html>
+
+<!-- <script>
+  let quadradow = 500;
+  let quadradoh = 500;
+  function funcao() {
+    let quadrado = (document.getElementById("quadrado").style.width =
+      quadradow - 250 + "px");
+    document.getElementById("quadrado").style.height = quadradoh - 250 + "px";
+  }
+</script>

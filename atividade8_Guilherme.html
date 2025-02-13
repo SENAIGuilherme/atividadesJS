@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 08</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      h2,
+      h3 {
+        color: rgb(0, 255, 0);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Caixa de Texto Dinâmica: Altere o tamanho da fonte de um parágrafo ao
+      clicar em um botão.
+    </h3>
+    <button onclick="funcao()">Aumentar parágrafo</button>
+    <p id="parag"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum beatae ab repudiandae ullam nihil numquam, voluptatem dolor a vero aperiam nostrum inventore maxime ea atque rem consequatur, exercitationem aliquid.</b></p>
+  </body>
+  <script>
+    function funcao() {
+      document.getElementById("parag").style.fontSize = "30px";
+    }
+  </script>
+</html>
