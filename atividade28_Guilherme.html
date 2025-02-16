@@ -27,5 +27,26 @@
       e alert().
     </h3>
   </body>
-  <script></script>
+  <script>
+    let user = prompt("Pedra, Papel ou Tesoura?");
+    let comp = Math.floor(Math.random() * 3);
+    if (comp == 0) {
+      comp = "Pedra";
+    } else if (comp == 1) {
+      comp = "Papel";
+    } else {
+      comp = "Tesoura";
+    }
+    if (user == comp) {
+      alert("Empate!");
+    } else if (
+      (user == "Pedra" && comp == "Tesoura") ||
+      (user == "Papel" && comp == "Pedra") ||
+      (user == "Tesoura" && comp == "Papel")
+    ) {
+      alert("Você ganhou!");
+    } else {
+      alert("Você perdeu!");
+    }
+  </script>
 </html>

@@ -26,6 +26,25 @@
       Simulador de Luz: Clique em uma lâmpada para ligar e desligar (trocando
       imagens de "acesa" e "apagada").
     </h3>
+    <img id="off" src="https://www.w3schools.com/js/pic_bulboff.gif" />
+    <img
+      id="on"
+      src="https://www.w3schools.com/js/pic_bulbon.gif"
+      style="display: none"
+    />
   </body>
-  <script></script>
+  <script>
+    let off = document.getElementById("off");
+    let on = document.getElementById("on");
+
+    off.addEventListener("click", function () {
+      off.style.display = "none";
+      on.style.display = "block";
+    });
+
+    on.addEventListener("click", function () {
+      on.style.display = "none";
+      off.style.display = "block";
+    });
+  </script>
 </html>

@@ -25,6 +25,13 @@
     <h3>
       Lançamento de Dados: Crie um simulador de dado que gera números de 1 a 6.
     </h3>
+    <h3 id="num"></h3>
+    <button onclick="funcao()">Lançar Dado</button>
   </body>
-  <script></script>
+  <script>
+    function funcao() {
+      let num = Math.floor(Math.random() * 6) + 1;
+      document.getElementById("num").innerHTML = num;
+    }
+  </script>
 </html>

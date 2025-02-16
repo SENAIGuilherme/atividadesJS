@@ -26,6 +26,21 @@
       Formulário de Cadastro: Valide se o nome e o e-mail foram preenchidos
       antes de enviar o formulário.
     </h3>
+    <form>
+      <label>Nome</label>
+      <input id="name" type="text" />
+      <label>Email</label>
+      <input id="email" type="email" />
+      <button onclick="funcao()">Enviar</button>
+    </form>
   </body>
-  <script></script>
+  <script>
+    function funcao() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      if (name === "" || email === "") {
+        alert("Preencha todos os campos!");
+      }
+    }
+  </script>
 </html>

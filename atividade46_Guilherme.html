@@ -23,6 +23,17 @@
   </head>
   <body>
     <h3>Ocultar e Mostrar: Crie um botão que oculta e exibe imagens.</h3>
+    <button onclick="funcao()">Alterar Exibição</button>
+    <img id="img" src="https://placehold.co/500" />
   </body>
-  <script></script>
+  <script>
+    function funcao() {
+      let img = document.getElementById("img");
+      if (img.style.display === "block") {
+        img.style.display = "none";
+      } else {
+        img.style.display = "block";
+      } 
+    }
+  </script>
 </html>

@@ -22,7 +22,26 @@
     </style>
   </head>
   <body>
-    <h3>Sombra Dinâmica: Aplique uma sombra ao texto que aumenta com o movimento do mouse.</h3>
+    <h3>
+      Sombra Dinâmica: Aplique uma sombra ao texto que aumenta com o movimento
+      do mouse.
+    </h3>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod quidem sed
+      pariatur soluta expedita debitis obcaecati nihil architecto quam. Alias
+      nemo, repellendus obcaecati tempora aliquam harum iusto praesentium quidem
+      unde.
+    </p>
   </body>
-  <script></script>
+  <script>
+    document.addEventListener("mousemove", function (e) {
+      const x = e.clientX / window.innerWidth;
+      const y = e.clientY / window.innerHeight;
+      const shadowX = x * 20 - 10;
+      const shadowY = y * 20 - 10;
+      document.querySelector(
+        "p"
+      ).style.textShadow = `${shadowX}px ${shadowY}px 5px rgb(0, 255, 0)`;
+    });
+  </script>
 </html>

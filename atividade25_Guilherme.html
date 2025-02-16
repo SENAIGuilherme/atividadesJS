@@ -26,6 +26,22 @@
       Exibindo Dados: Após o envio de um formulário, mostre os dados inseridos
       usando innerHTML.
     </h3>
+    <form>
+      <label>Nome</label>
+      <input id="name" type="text" />
+      <label>Email</label>
+      <input id="email" type="email" />
+    </form>
+    <button onclick="funcao()">Enviar</button>
+    <p id="nome"></p>
+    <p id="pemail"></p>
   </body>
-  <script></script>
+  <script>
+    function funcao() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      document.getElementById("nome").innerHTML = `Nome: ${name}`;
+      document.getElementById("pemail").innerHTML = `Email: ${email}`;
+    }
+  </script>
 </html>

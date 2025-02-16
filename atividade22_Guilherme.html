@@ -26,6 +26,18 @@
       Senha Secreta: Crie um campo de senha que mostre um alerta se a senha for
       fraca (menos de 6 caracteres).
     </h3>
+    <form>
+      <label>Senha:</label>
+      <input id="password" type="password" />
+      <button onclick="funcao()">Enviar</button>
+    </form>
   </body>
-  <script></script>
+  <script>
+    function funcao() {
+      let senha = document.getElementById("password");
+      if (senha.value.length < 6) {
+        alert("Senha fraca! Insira uma senha com mais de 6 caracteres.");
+      }
+    }
+  </script>
 </html>

@@ -26,6 +26,21 @@
       Validação Divertida: Se o usuário tentar enviar o formulário sem preencher
       algo, exiba uma mensagem engraçada.
     </h3>
+    <form>
+      <label>Nome</label>
+      <input id="name" type="text" />
+      <label>Email</label>
+      <input id="email" type="email" />
+      <button onclick="funcao()">Enviar</button>
+    </form>
   </body>
-  <script></script>
+  <script>
+    function funcao() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      if (name === "" || email === "") {
+        alert("Mensagem engraçada!");
+      }
+    }
+  </script>
 </html>
